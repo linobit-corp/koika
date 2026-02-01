@@ -1,9 +1,9 @@
 (*! Utilities | Vectors and bitvector library !*)
-Require Import Coq.Lists.List Coq.Bool.Bool.
-Require Import Coq.micromega.Lia.
-Require Import Coq.Arith.Arith.
-Require Export Coq.NArith.NArith.          (* Coq bug: If this isn't exported, other files can't import Vect.vo *)
-Require Import Coq.ZArith.ZArith.
+Require Import Stdlib.Lists.List Stdlib.Bool.Bool.
+Require Import Stdlib.micromega.Lia.
+Require Import Stdlib.Arith.Arith.
+Require Export Stdlib.NArith.NArith.          (* Coq bug: If this isn't exported, other files can't import Vect.vo *)
+Require Import Stdlib.ZArith.ZArith.
 Require Import Koika.EqDec.
 Import EqNotations.
 

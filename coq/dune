@@ -3,4 +3,4 @@
  (name Koika)
  (modules :standard)
  (mode vo)
- (theories Ltac2))
+ (theories Ltac2 Stdlib))

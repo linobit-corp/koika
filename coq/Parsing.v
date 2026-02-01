@@ -6,8 +6,8 @@ Require Import
 
 Export Koika.Types.SigNotations.
 Export Koika.Primitives.PrimUntyped.
-Export Coq.Strings.String.
-Export Coq.Lists.List.ListNotations.
+Export Stdlib.Strings.String.
+Export Stdlib.Lists.List.ListNotations.
 
 Declare Custom Entry koika.
 Declare Custom Entry koika_args.

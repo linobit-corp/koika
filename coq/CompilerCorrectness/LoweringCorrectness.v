@@ -1,5 +1,5 @@
 (*! Circuits | Proof of correctness for the lowering phase !*)
-Require Import Coq.setoid_ring.Ring_theory Coq.setoid_ring.Ring Coq.setoid_ring.Ring.
+Require Import Stdlib.setoid_ring.Ring_theory Stdlib.setoid_ring.Ring Stdlib.setoid_ring.Ring.
 Require Import Koika.Common Koika.Environments Koika.Syntax
         Koika.SemanticProperties Koika.PrimitiveProperties Koika.SyntaxMacros Koika.Lowering.
 Require Koika.TypedSemantics Koika.LoweredSemantics.

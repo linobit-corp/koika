@@ -1,5 +1,5 @@
 (*! Language | Types used by Kôika programs !*)
-Require Export Coq.Strings.String.
+Require Export Stdlib.Strings.String.
 Require Export Koika.Common Koika.IndexUtils.
 
 (** * Definitions **)

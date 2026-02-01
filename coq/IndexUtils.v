@@ -1,5 +1,5 @@
 (*! Utilities | Functions on Vect.index elements !*)
-Require Coq.Logic.FinFun.
+Require Stdlib.Vectors.FinFun.
 Require Import Koika.Common Koika.Member.
 Require Export Koika.Vect.
 

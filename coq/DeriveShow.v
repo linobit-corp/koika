@@ -8,7 +8,7 @@ Import Ltac2.Init.
 Import Ltac2.Notations.
 
 Module Internals.
-  Import Coq.Lists.List.ListNotations.
+  Import Stdlib.Lists.List.ListNotations.
   Import IdentParsing.Unsafe.
   Import IdentParsing.
 
@@ -16,6 +16,7 @@ Module Internals.
 
   Ltac2 eval_simpl c :=
     Std.eval_simpl {
+        Std.rStrength := Std.Norm;
         Std.rBeta := true;
         Std.rMatch := true;
         Std.rFix := true;

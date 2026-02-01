@@ -1,5 +1,5 @@
 (*! Circuits | Compiler correctness proof !*)
-Require Import Coq.setoid_ring.Ring_theory Coq.setoid_ring.Ring Coq.setoid_ring.Ring.
+Require Import Stdlib.setoid_ring.Ring_theory Stdlib.setoid_ring.Ring Stdlib.setoid_ring.Ring.
 
 Require Import
         Koika.Common

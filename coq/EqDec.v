@@ -1,6 +1,6 @@
 (*! Utilities | Decidable equality typeclass !*)
-Require Import Coq.Strings.String.
-Require Import Coq.Vectors.Vector.
+Require Import Stdlib.Strings.String.
+Require Import Stdlib.Vectors.Vector.
 
 Class EqDec (T: Type) :=
   { eq_dec: forall t1 t2: T, { t1 = t2 } + { t1 <> t2 } }.

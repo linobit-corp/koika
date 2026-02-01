@@ -1,7 +1,7 @@
 (*! Utilities | Finiteness typeclass !*)
-Require Import Coq.Lists.List.
-Require Import Coq.micromega.Lia.
-Require Import Coq.Arith.Arith.
+Require Import Stdlib.Lists.List.
+Require Import Stdlib.micromega.Lia.
+Require Import Stdlib.Arith.Arith.
 Import ListNotations.
 
 Class FiniteType {T} :=

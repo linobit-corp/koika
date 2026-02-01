@@ -1,6 +1,6 @@
 (*! Utilities | Show typeclass (α → string) !*)
-Require Export Coq.Strings.String.
-Require Import Coq.Arith.PeanoNat.
+Require Export Stdlib.Strings.String.
+Require Import Stdlib.Arith.PeanoNat.
 
 Class Show (A: Type) :=
   { show: A -> string }.

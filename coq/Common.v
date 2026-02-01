@@ -1,7 +1,7 @@
 (*! Utilities | Shared utilities !*)
-Require Export Coq.micromega.Lia.
-Require Export Coq.Arith.Arith.
-Require Export Coq.Lists.List Coq.Bool.Bool Coq.Strings.String.
+Require Export Stdlib.micromega.Lia.
+Require Export Stdlib.Arith.Arith.
+Require Export Stdlib.Lists.List Stdlib.Bool.Bool Stdlib.Strings.String.
 Require Export Koika.EqDec Koika.Vect Koika.FiniteType Koika.Show.
 
 Export EqNotations.
@@ -359,7 +359,7 @@ Section Lists.
   Qed.
 End Lists.
 
-Require Lists.Streams.
+Require Stdlib.Streams.Streams.
 
 Declare Scope stream_scope.
 Open Scope stream_scope.
@@ -369,7 +369,7 @@ Module StreamNotations.
 End StreamNotations.
 
 Module Streams.
-  Include Coq.Lists.Streams.
+  Include Stdlib.Streams.Streams.
 
   Import StreamNotations.
 
