@@ -9,4 +9,4 @@
 (coq.extraction
  (prelude Extraction)
  (extracted_modules extr)
- (theories Koika))
+ (theories Koika Stdlib))
