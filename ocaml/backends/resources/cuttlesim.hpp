@@ -572,23 +572,30 @@ namespace prims {
     return bits<sz1>::of_shifted_sbits(data.to_shifted_sbits() >> shift.v);
   }
 
+  // Guard: shifting by >= type width is undefined behavior in C++.
+  // Koika semantics: lsl/lsr apply single-bit shifts N times, so
+  // shifting by >= width produces 0 (all bits shifted out).
   template<bitwidth sz1>
   bits<sz1> operator>>(const bits<sz1> data, const size_t shift) {
+    if (shift >= sz1) return bits<sz1>::mk(0);
     return bits<sz1>::mk(data.v >> shift);
   }
 
   template<bitwidth sz1>
   bits<sz1> operator<<(const bits<sz1> data, const size_t shift) {
+    if (shift >= sz1) return bits<sz1>::mk(0);
     return mask(bits<sz1>::mk(data.v << shift));
   }
 
   template<bitwidth sz1, bitwidth sz2>
   bits<sz1> operator>>(const bits<sz1> data, const bits<sz2> shift) {
+    if (shift.v >= sz1) return bits<sz1>::mk(0);
     return bits<sz1>::mk(data.v >> shift.v);
   }
 
   template<bitwidth sz1, bitwidth sz2>
   bits<sz1> operator<<(const bits<sz1> data, const bits<sz2> shift) {
+    if (shift.v >= sz1) return bits<sz1>::mk(0);
     return mask(bits<sz1>::mk(data.v << shift.v));
   }
 
